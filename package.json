@@ -1,0 +1,17 @@
+{
+  "name": "pgmap",
+  "repo": "cstdx/pgmap",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "uint32 indexed key value table",
+  "keywords": [
+    "map", "key/value", "table"
+  ],
+  "src": [
+    "pgmap/pgmap.c",
+    "pgmap/pgmap.h"
+  ],
+  "development": {
+    "vbogretsov/cmockery": "1.0.0"
+  }
+}

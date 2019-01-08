@@ -1,0 +1,19 @@
+{
+  "name": "cmockery",
+  "repo": "vbogretsov/cmockery",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "description": "Google cmockery port for compatibility with clib",
+  "keywords": [
+    "mock",
+    "unit",
+    "test"
+  ],
+  "src": [
+    "cmockery.h",
+    "cmockery.c",
+    "pprint.c",
+    "config.h.in",
+    "configure"
+  ]
+}
