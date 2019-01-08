@@ -19,7 +19,7 @@ cx_pgmap_t* pgmap_new(uint8_t page, uint8_t cell, uint32_t size);
  * Deallocate pgamap.
  * @param self pgmap to be deallocated.
  */
-void map_free(cx_pgmap_t* self);
+void cx_pgmap_free(cx_pgmap_t* self);
 
 /**
  * Set key/value pair.
@@ -28,7 +28,7 @@ void map_free(cx_pgmap_t* self);
  * @param key  item's key.
  * @param data item's value.
  */
-void map_set(cx_pgmap_t* self, uint32_t key, void* value);
+void cx_pgmap_set(cx_pgmap_t* self, uint32_t key, void* value);
 
 /**
  * Get value associated with the key provided. If the key already exists in the
@@ -39,7 +39,7 @@ void map_set(cx_pgmap_t* self, uint32_t key, void* value);
  * @param  data item's value.
  * @return      true if key was found and value was recorded, otherwise false.
  */
-bool map_get(cx_pgmap_t* self, uint32_t key, void** value);
+bool cx_pgmap_get(cx_pgmap_t* self, uint32_t key, void** value);
 
 /**
  * Delete value associated with the key provided.
@@ -48,6 +48,6 @@ bool map_get(cx_pgmap_t* self, uint32_t key, void** value);
  * @param  key  item's key.
  * @return      true if key was found and data was removed, otherwise false.
  */
-bool map_del(cx_pgmap_t* self, uint32_t key);
+bool cx_pgmap_del(cx_pgmap_t* self, uint32_t key);
 
 #endif // !CSTDX_PGMAP_H

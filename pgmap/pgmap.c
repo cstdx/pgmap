@@ -25,16 +25,16 @@ cx_pgmap_t* pgmap_new(uint8_t page, uint8_t cell, uint32_t size) {
     return NULL;
 }
 
-void map_free(cx_pgmap_t* self) {
+void cx_pgmap_free(cx_pgmap_t* self) {
 }
 
-void map_set(cx_pgmap_t* self, uint32_t key, void* value) {
+void cx_pgmap_set(cx_pgmap_t* self, uint32_t key, void* value) {
 }
 
-bool map_get(cx_pgmap_t* self, uint32_t key, void** value) {
+bool cx_pgmap_get(cx_pgmap_t* self, uint32_t key, void** value) {
     return false;
 }
 
-bool map_del(cx_pgmap_t* self, uint32_t key) {
+bool cx_pgmap_del(cx_pgmap_t* self, uint32_t key) {
     return false;
 }
